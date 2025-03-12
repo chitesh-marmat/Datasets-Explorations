@@ -69,6 +69,12 @@ pip install -r requirements.txt
 To run the notebook, execute the following commands:
 ```bash
 jupyter notebook air_quality.ipynb
+
+# Load the cleaned dataset
+import pandas as pd
+
+# Load the cleaned air quality dataset
+df = pd.read_csv('cleaned_air_quality.csv')
 ```
 
 
