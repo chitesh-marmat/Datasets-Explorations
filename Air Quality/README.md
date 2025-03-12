@@ -1,1 +1,71 @@
+# Air Quality Data Analysis
+
+## Overview
+This repository contains an exploration of air quality data collected from an Italian city.The goal of this repository is to analyze, clean, and extract insights from the dataset using various data processing and visualization techniques.
+
+## About the Dataset
+- **Source:** [UCI Machine Learning Repository - Air Quality Dataset](https://archive.ics.uci.edu/dataset/360/air+quality)
+- **Donated on:** March 22, 2016
+- **Description:** This dataset contains hourly measurements of air pollutants and sensor readings collected from a gas multisensor device deployed in a polluted area at road level within an Italian city. The device recorded data from March 2004 to February 2005.
+- **Characteristics:** Multivariate, Time-Series
+- **Instances:** 9358
+- **Features:** 15
+
+### Dataset Information
+The dataset consists of 9358 instances of hourly averaged responses from an array of 5 metal oxide chemical sensors embedded in an Air Quality Chemical Multisensor Device. Ground truth hourly averaged concentrations for CO, Non-Methanic Hydrocarbons, Benzene, Total Nitrogen Oxides (NOx), and Nitrogen Dioxide (NO2) were provided by a co-located reference certified analyzer.
+
+### Feature Description
+| Index | Feature Name | Description |
+|--------|-----------------|--------------------------------------|
+| 0 | Date | Date in DD/MM/YYYY format |
+| 1 | Time | Time in HH.MM.SS format |
+| 2 | CO (mg/m³) | True hourly averaged concentration (reference analyzer) |
+| 3 | PT08.S1 (tin oxide) | Sensor response (nominally CO targeted) |
+| 4 | NMHC (µg/m³) | True hourly averaged overall Non-Methanic Hydrocarbons concentration |
+| 5 | Benzene (µg/m³) | True hourly averaged Benzene concentration |
+| 6 | PT08.S2 (titania) | Sensor response (nominally NMHC targeted) |
+| 7 | NOx (ppb) | True hourly averaged NOx concentration |
+| 8 | PT08.S3 (tungsten oxide) | Sensor response (nominally NOx targeted) |
+| 9 | NO2 (µg/m³) | True hourly averaged NO2 concentration |
+| 10 | PT08.S4 (tungsten oxide) | Sensor response (nominally NO2 targeted) |
+| 11 | PT08.S5 (indium oxide) | Sensor response (nominally O3 targeted) |
+| 12 | Temperature (°C) | Ambient temperature |
+| 13 | Relative Humidity (%) | Measured humidity |
+| 14 | Absolute Humidity | Absolute humidity measurement |
+
+## Repository Structure
+This repository contains the following files:
+
+- **AirQuality.csv** - The raw air quality dataset obtained from UCI.
+- **cleaned_air_quality.csv** - The cleaned version of the dataset after preprocessing.
+- **requirements.txt** - Lists the dependencies required to run the analysis.
+- **README.md** - Documentation of the repository.
+
+## Usage Guide
+### Option 1: Clone the Repository
+```bash
+# Clone the repository
+git clone https://github.com/chitesh-marmat/Datasets-Explorations.git
+
+# Navigate to the Air Quality directory
+cd Datasets-Explorations/Air Quality
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Option 2: Manually Download the Cleaned Data
+1. Navigate to the repository.
+2. Download `cleaned_air_quality.csv` manually.
+3. Use it in your analysis script or Jupyter Notebook.
+
+### Loading the Cleaned Data in Python
+```python
+import pandas as pd
+
+df = pd.read_csv("cleaned_air_quality.csv")
+df.head()
+```
+
+ 
 
