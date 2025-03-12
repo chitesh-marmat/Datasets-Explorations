@@ -42,7 +42,7 @@ This repository contains the following files:
 - **requirements.txt** - Lists the dependencies required to run the analysis.
 - **README.md** - Documentation of the repository.
 
-## Notebook - air_quality.ipynb
+## 
 In the `air_quality.ipynb` notebook, the dataset has been loaded and preprocessed by handling missing values and cleaning the data. Exploratory data analysis (EDA) has been performed using visualizations like histograms and correlation heatmaps to identify trends in air pollution levels. Feature engineering has been applied by creating new variables and transforming existing ones to enhance the dataset’s usability. Additionally, statistical analysis has been conducted to uncover patterns, correlations, and seasonal variations in pollutant levels. These analyses provide valuable insights into air quality trends, laying the foundation for further research and predictive modeling.
 
 You can further analyze this dataset by applying machine learning models to gain deeper insights into air quality trends. Regression models like Linear Regression and Random Forest can help predict pollutant concentrations, while classification models such as SVM and Neural Networks can categorize air quality levels. Time series models like ARIMA and LSTMs can forecast future pollution trends, and anomaly detection techniques can identify unusual spikes, aiding in environmental monitoring and policy decisions.
