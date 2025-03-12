@@ -1,7 +1,7 @@
 # Air Quality Data Analysis
 
 ## Overview
-This repository contains an exploration of air quality data collected from an Italian city.The goal of this repository is to analyze, clean, and extract insights from the dataset using various data processing and visualization techniques.
+This repository contains an exploration of air quality data collected from an Italian city. The goal of this repository is to analyze, clean, and extract insights from the dataset using various data processing and visualization techniques.
 
 ## About the Dataset
 - **Source:** [UCI Machine Learning Repository - Air Quality Dataset](https://archive.ics.uci.edu/dataset/360/air+quality)
@@ -38,8 +38,19 @@ This repository contains the following files:
 
 - **AirQuality.csv** - The raw air quality dataset obtained from UCI.
 - **cleaned_air_quality.csv** - The cleaned version of the dataset after preprocessing.
+- **air_quality.ipynb** - A Jupyter Notebook containing code for data analysis and visualization.
 - **requirements.txt** - Lists the dependencies required to run the analysis.
 - **README.md** - Documentation of the repository.
+
+## Notebook - air_quality.ipynb
+The `air_quality.ipynb` notebook contains:
+1. **Data Loading & Preprocessing** - Reading the dataset, handling missing values, and cleaning data.
+2. **Exploratory Data Analysis (EDA)** - Visualizations such as histograms, scatter plots, and correlation heatmaps.
+3. **Feature Engineering** - Creating new features and transforming existing ones.
+4. **Statistical Analysis** - Identifying trends, correlations, and seasonal variations in air pollution levels.
+5. **Machine Learning Models (if applicable)** - Applying regression or classification models to analyze air quality patterns.
+
+## You can further analyze this dataset by applying machine learning models to gain deeper insights into air quality trends. Regression models like Linear Regression and Random Forest can help predict pollutant concentrations, while classification models such as SVM and Neural Networks can categorize air quality levels. Time series models like ARIMA and LSTMs can forecast future pollution trends, and anomaly detection techniques can identify unusual spikes, aiding in environmental monitoring and policy decisions.
 
 ## Usage Guide
 ### Option 1: Clone the Repository
@@ -59,6 +70,12 @@ pip install -r requirements.txt
 2. Download `cleaned_air_quality.csv` manually.
 3. Use it in your analysis script or Jupyter Notebook.
 
+### Running the Jupyter Notebook
+To run the notebook, execute the following commands:
+```bash
+jupyter notebook air_quality.ipynb
+```
+
 ### Loading the Cleaned Data in Python
 ```python
 import pandas as pd
@@ -68,4 +85,3 @@ df.head()
 ```
 
  
-
